@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <style>
+    /* Basic reset */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #landing {
+      padding: 20px;
+    }
+
+    header#p {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    #bb {
+      position: relative;
+    }
+
+    /* Navigation styles (keep your existing styles or add your own) */
+    #opennav {
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    /* Flex container for aside */
+    aside.col-12.col-s-12 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px 0;
+      border-top: 1px solid #ccc;
+    }
+
+    /* Text container */
+    #con-text {
+      flex: 1;
+    }
+
+    #con-text p {
+      margin: 8px 0;
+    }
+
+    /* Photo container */
+    #con-photo {
+      flex-shrink: 0;
+    }
+
+    #profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #333;
+      display: block;
+    }
+
+    /* Responsive: stack on small screens */
+    @media (max-width: 600px) {
+      aside.col-12.col-s-12 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      #con-text {
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="landing">
+    <header id="p">portfolio</header>
+    <div id="bb">
+      <p id="opennav" onclick="openNav()">&#9776;</p>
+      <ul class="col-12 col-s-12" id="nav">
+        <a href="javascript:void(0)" id="clobt" class="closebtn" onclick="closeNav()">&times;</a>
+        <li><a href="#landing">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <aside class="col-12 col-s-12">
+        <div id="con-text">
+          <p id="h">Hello, It's Me</p>
+          <p id="name">NAGINENI NITHIN RAO</p>
+          <p id="job">And I'm a Software Engineer</p>
+        </div>
+        <div id="con-photo">
+          <img src="profile.jpg" alt="My Photo" id="profile-pic" />
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    // Placeholder functions for openNav / closeNav if you use them
+    function openNav() {
+      document.getElementById("nav").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("nav").style.width = "0";
+    }
+  </script>
+</body>
+</html>
