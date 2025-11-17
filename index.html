@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Portfolio</title>
@@ -14,21 +15,26 @@
     <div id="landing">
       <header id="p">portfolio</header>
       <div id="bb">
+        <!-- mobile menu icon -->
         <p id="opennav" onclick="openNav()">&#9776;</p>
+
+        <!-- navigation -->
         <ul class="col-12 col-s-12" id="nav">
           <a
-            href="javascrpit:void(0)"
+            href="javascript:void(0)"
             id="clobt"
             class="closebtn"
             onclick="closeNav()"
             >&times;</a
           >
-          <li><a href="#landing">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#landing" onclick="closeNav()">Home</a></li>
+          <li><a href="#about" onclick="closeNav()">About</a></li>
+          <li><a href="#skills" onclick="closeNav()">Skills</a></li>
+          <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+          <li><a href="#contact" onclick="closeNav()">Contact</a></li>
         </ul>
+
+        <!-- main hero area -->
         <aside class="col-12 col-s-12">
           <div id="con-text">
             <p id="h">Hello, It's Me</p>
@@ -48,17 +54,19 @@
         </aside>
       </div>
     </div>
+
     <hr />
+
     <!--About-->
     <div id="about">
       <div id="matter">
         <header id="a">About Me</header>
         <p id="intro">
-          Iam Nithin Rao Nagineni,BTech CSE student at Vaagdevi Enginnering
+          I am Nithin Rao Nagineni, BTech CSE student at Vaagdevi Engineering
           College.<br />
-          Passion towards implementing new ideas and web designing.Involved in
+          Passion towards implementing new ideas and web designing. Involved in
           creating frontend projects<br />
-          which are user freindly.
+          which are user friendly.
         </p>
         <br />
         <ul>
@@ -82,11 +90,13 @@
         </ul>
         <p id="skil">
           To know more about my areas of specialization, please visit the
-          'Skills' page
+          'Skills' page.
         </p>
       </div>
     </div>
+
     <hr />
+
     <!--Skills-->
     <div id="skills">
       <div id="skillpart">
@@ -95,121 +105,141 @@
           <!--web development-->
           <main class="box">
             <article>
-              <img src="web.jpg" id="wb" />
+              <img src="web.jpg" id="wb" alt="Frontend Development" />
             </article>
             <section>
               <div class="topic topicwb">
                 <h3>Frontend Development</h3>
                 <p>
-                  Web Development is not about making websites,it's about
-                  sclupting the digital experience.
+                  Web Development is not about making websites, it's about
+                  sculpting the digital experience.
                 </p>
               </div>
               <div class="sklevel">
-                <p>HTML- Intermediate</p>
-                <p>CSS - Intermediate</p>
-                <p>JS - Beginner</p>
-                <p>REACTJS- Beginner</p>
-                <p>Responsive Design - Beginner</p>
+                <p>HTML5 - Intermediate</p>
+                <p>CSS3 - Intermediate</p>
+                <p>JavaScript - Intermediate</p>
+                <p>ReactJS - Intermediate</p>
+                <p>Responsive Design - Intermediate</p>
               </div>
             </section>
           </main>
+
           <!--java fullstack developer-->
           <main class="box">
             <article>
-              <img src="web.jpg" id="wb" />
+              <img src="web.jpg" id="wb" alt="Java" />
             </article>
             <section>
               <div class="topic topicwb">
-                <h3>java full stack</h3>
+                <h3>Java</h3>
                 <p>
-                  Designing an web application using frontend technologies and
-                  connecting them by using java
+                  Designing web applications using frontend technologies and
+                  connecting them using Java.
                 </p>
               </div>
               <div class="sklevel">
-                <p>JAVA- Intermediate</p>
-                <p>JDBC- Intermediate</p>
-                <p>MYSQL- Intermediate</p>
-                <!--<p>JS - Beginner</p>
-                                <p>Responsive Design - Beginner</p> -->
+                <p>Core Java - Intermediate</p>
+                <p>Advance java - Basic</p>
               </div>
             </section>
           </main>
-          <!--designing-->
-          <main class="box">
-            <article>
-              <img src="Design.jpg" id="des" />
-            </article>
-            <section>
-              <div class="topic topicdes">
-                <h3>Designing</h3>
-                <p>
-                  Design is straightforward, which is what makes it intricate.
-                </p>
-              </div>
-              <div class="sklevel">
-                <p>photoshop - Beginner</p>
-                <p>Adobe Illustrator - Intermediate</p>
-                <p>Canva - Intermediate</p>
-              </div>
-            </section>
-          </main>
+
           <!--coding lang.-->
           <main class="box">
             <article>
-              <img src="cod.jpg" id="cl" />
+              <img src="cod.jpg" id="cl" alt="Coding Languages" />
             </article>
             <section>
               <div class="topic topiccl">
                 <h3>Coding Languages</h3>
-                <p>Coding is essential for literacy in the future</p>
+                <p>Coding is essential for literacy in the future.</p>
               </div>
               <div class="sklevel">
                 <p>C - Intermediate</p>
                 <p>C++ - Intermediate</p>
-                <p>python - Intermediate</p>
-                <p>java - Intermediate</p>
-                <p>php - Beginner</p>
+                <p>Java - Intermediate</p>
+                <p>Python - Intermediate</p>
+                <p>PHP - Beginner</p>
               </div>
             </section>
           </main>
+
           <!--sql.-->
           <main class="box boxsql">
             <article>
-              <img src="sql.jpg" id="sql" />
+              <img src="database.jpg" id="sql" alt="SQL" />
             </article>
             <section>
               <div class="topic topicsql">
-                <h3>My SQL</h3>
-                <p>
-                  SQL-The Language of love in the data world-we join
-                  tables,select best matches and find perfect records.
-                </p>
+                <h3>Databases</h3>
+                <p>Database is used for storage</p>
               </div>
               <div class="sklevel">
-                <p>sql - Beginner</p>
+                <p>SQL - Intermediate</p>
+                <p>MangoDB - Beginner</p>
               </div>
             </section>
           </main>
-          <!--remaining-->
+
+          <!-- tools -->
           <main class="box">
             <article>
-              <img src="soft.jpg" id="ss" />
+              <img src="cod.jpg" id="cl" alt="Coding Languages" />
+            </article>
+            <section>
+              <div class="topic topiccl">
+                <h3>tools</h3>
+                <p>different tools</p>
+              </div>
+              <div class="sklevel">
+                <p>git - Intermediate</p>
+                <p>VS Code - Intermediate</p>
+                <p>Eclipse - Intermediate</p>
+                <p>IntelliJ IDEA - Intermediate</p>
+                <p>Docker - Beginner</p>
+              </div>
+            </section>
+          </main>
+
+          <!-- Devops -->
+          <main class="box">
+            <article>
+              <img src="Devops.png" id="devops" alt="DevOps" />
+            </article>
+            <section>
+              <div class="topic topiccl">
+                <h3>Cloud & DevOps</h3>
+                <p>different tools</p>
+              </div>
+              <div class="sklevel">
+                <p>AWS (EC2, S3, RDS) - Intermediate</p>
+                <p>Jenkins - Intermediate</p>
+                <p>Kubernetes - Intermediate</p>
+                <p>Ansible - Intermediate</p>
+                <p>Terraform - Beginner</p>
+              </div>
+            </section>
+          </main>
+
+          <!--soft skills-->
+          <main class="box">
+            <article>
+              <img src="soft.jpg" id="ss" alt="Soft Skills" />
             </article>
             <section>
               <div class="topic topicss">
                 <h3>Soft Skills</h3>
                 <p>
-                  Techincal skills gives status but soft skills gives respect
-                  and discipline
+                  Technical skills give status, but soft skills give respect and
+                  discipline.
                 </p>
               </div>
               <ul class="sklevel">
                 <li>Good Communication</li>
-                <li>problem-solving</li>
-                <li>creativity</li>
-                <li>work ethic</li>
+                <li>Problem-solving</li>
+                <li>Creativity</li>
+                <li>Work ethic</li>
                 <li>Emotional intelligence</li>
                 <li>Adaptability</li>
               </ul>
@@ -218,66 +248,142 @@
         </div>
       </div>
     </div>
+
     <hr />
+
     <!--projects-->
     <div id="projects">
-      <header id="ph">Projects</header>
-      <div id="projpa">
-        <!--portfolio-->
-        <div class="pronamep">
-          <svg height="auto" width="auto">
-            <clipPath id="cir">
-              <circle cx="120" cy="120" r="70" />
-            </clipPath>
-            <circle
-              cx="120"
-              cy="120"
-              r="70"
-              fill="none"
-              stroke="#cecece"
-              stroke-width="2px"
-            />
-            <!-- <image
-              x="-58"
-              y="-80"
-              height="350"
-              width="350"
-              href="market.jpg"
-              clip-path="url(#cir)"
-            /> -->
-          </svg>
-          <main id="expp">
-            <h3>Market segmentation analysis</h3>
-            <p>
-              Market Segmentation using Machine Learning identifies customer
-              groups based on interests and behaviour<br>
-              to support targeted marketing strategies. Built with HTML, CSS,
-              Flask, and Scikit-learn, the project uses<br>
-              K-Means clustering for segment detection. It helps businesses
-              personalize services, improve engagement,<br>
-              and drive growth. <br />Techonlogies applied HTML,CSS,Machine
-              Learning.
-            </p>
+      <div id="projectpart">
+        <header id="Ph">Projects</header>
+        <div id="projects-list">
+          <!-- Project 1 -->
+          <main class="box project-box">
+            <article class="project-img-wrapper">
+              <img
+                src="market.jpg"
+                class="project-img"
+                alt="Market Segmentation"
+              />
+              <!-- hover overlay -->
+              <div class="project-overlay">
+                <!-- GitHub: project code -->
+                <a
+                  href="https://github.com/nagineninithinrao/market-segmentation-analysis-mc-donald-s-"
+                  class="overlay-icon"
+                  target="_blank"
+                  title="View Code on GitHub"
+                >
+                  <i class="fa fa-github"></i>
+                </a>
+                <!-- Live UI / demo -->
+                <a
+                  href="https://nagineninithinrao.github.io/market-segmentation-analysis-mc-donald-s-/"
+                  class="overlay-icon"
+                  target="_blank"
+                  title="View Live Project"
+                >
+                  <i class="fa fa-external-link"></i>
+                </a>
+              </div>
+            </article>
+            <section>
+              <div class="topic topicsql">
+                <h3>Market Segmentation Analysis</h3>
+                <p class="project-short">
+                  Market Segmentation using Machine Learning to group customers
+                  based on interests and behaviour.
+                </p>
+
+                <details class="project-details">
+                  <summary>Show more</summary>
+                  <p>
+                    This project identifies customer groups using K-Means
+                    clustering to support targeted marketing strategies. Built
+                    with HTML, CSS, Flask, and Scikit-learn, it helps businesses
+                    personalize services, improve engagement, and drive growth.
+                  </p>
+                  <p>
+                    <strong>Technologies:</strong> HTML, CSS, Flask,
+                    Scikit-learn, Machine Learning.
+                  </p>
+                  <a
+                    href="https://github.com/nagineninithinrao/market-segmentation-analysis-mc-donald-s-"
+                    class="project-link"
+                    target="_blank"
+                    >View Project Code</a
+                  >
+                </details>
+              </div>
+            </section>
           </main>
-        </div>
-        <!--galactic-->
-        <div class="pronameb">
-          <main id="expb">
-            <h3>Galactic Gazetter</h3>
-            <p>
-              Galactic Gazetteer is a deep learning-based project that
-              classifies planet images by size, atmospheric conditions,<br> and
-              other features.It uses a Convolutional Neural Network (CNN) along
-              with HTML, CSS, and <br>Flask for automated image classification. This
-              tool supports astronauts and researchers in advancing<br> space
-              exploration and analysis.Techonlogies applied HTML,CSS,Machine
-              Learning,Deep Learning
-            </p>
+
+          <!-- Project 2 -->
+          <main class="box project-box">
+            <article class="project-img-wrapper">
+              <img
+                src="GALACTIC.jpeg"
+                class="project-img"
+                alt="Galactic Gazetteer"
+              />
+              <!-- hover overlay -->
+              <div class="project-overlay">
+                <!-- GitHub: project code -->
+                <a
+                  href="https://github.com/nagineninithinrao/Galactic-Gazetteer-A-Comprehensive-Dataset-of-Planet-Classification-Images"
+                  class="overlay-icon"
+                  target="_blank"
+                  title="View Code on GitHub"
+                >
+                  <i class="fa fa-github"></i>
+                </a>
+                <!-- Live UI / demo -->
+                <a
+                  href="https://nagineninithinrao.github.io/Galactic-Gazetteer-A-Comprehensive-Dataset-of-Planet-Classification-Images/"
+                  class="overlay-icon"
+                  target="_blank"
+                  title="View Live Project"
+                >
+                  <i class="fa fa-external-link"></i>
+                </a>
+              </div>
+            </article>
+            <section>
+              <div class="topic topicsql">
+                <h3>Galactic Gazetteer</h3>
+                <p class="project-short">
+                  A deep learning model that classifies planet images based on
+                  size, atmosphere, and visual features.
+                </p>
+
+                <details class="project-details">
+                  <summary>Show more</summary>
+                  <p>
+                    Galactic Gazetteer uses a Convolutional Neural Network (CNN)
+                    along with HTML, CSS, and Flask for automated image
+                    classification. It helps astronauts and researchers by
+                    providing quick insights into planetary characteristics and
+                    supporting space exploration analysis.
+                  </p>
+                  <p>
+                    <strong>Technologies:</strong> HTML, CSS, Flask, Machine
+                    Learning, Deep Learning (CNN).
+                  </p>
+                  <a
+                    href="https://github.com/nagineninithinrao/Galactic-Gazetteer-A-Comprehensive-Dataset-of-Planet-Classification-Images"
+                    class="project-link"
+                    target="_blank"
+                    >View Project Code</a
+                  >
+                </details>
+              </div>
+            </section>
           </main>
         </div>
       </div>
     </div>
+
     <hr />
+
     <!--contact-->
     <div id="contact">
       <header id="conhe">
@@ -285,29 +391,37 @@
         <p id="git">Get in touch</p>
       </header>
       <div id="sl">
-        <a href="tel:+919346453961"
-          ><div id="c"><i class="fa fa-phone" id="fa"></i></div
-        ></a>
+        <a href="tel:+919346453961">
+          <div id="c"><i class="fa fa-phone" id="fa"></i></div>
+        </a>
         <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=nagineninithinrao399@gmail.com"
           target="_blank"
         >
-          <div id="c"><i class="fa fa-envelope" id="mail"></i></div
-        ></a>
-        <a href="https://www.linkedin.com/in/nithin-rao-nagineni-589701262"
-          ><div id="c"><i class="fa fa-linkedin" id="fa"></i></div
-        ></a>
-        <a href="https://github.com/nagineninithinrao"
-          ><div id="c"><i class="fa fa-github" id="fa"></i></div
-        ></a>
-        <a href="https://x.com/nithin_nagineni?t=eUoH2cyWP7BgaZZUx0p5wg&s=09"
-          ><div id="c"><i class="fa fa-twitter" id="fa"></i></div
-        ></a>
-        <a href="https://www.instagram.com/nithinnagineni/"
-          ><div id="c"><i class="fa fa-instagram" id="fa"></i></div
-        ></a>
+          <div id="c"><i class="fa fa-envelope" id="mail"></i></div>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/nithin-rao-nagineni-589701262"
+          target="_blank"
+        >
+          <div id="c"><i class="fa fa-linkedin" id="fa"></i></div>
+        </a>
+        <a href="https://github.com/nagineninithinrao" target="_blank">
+          <div id="c"><i class="fa fa-github" id="fa"></i></div>
+        </a>
+        <a
+          href="https://x.com/nithin_nagineni?t=eUoH2cyWP7BgaZZUx0p5wg&s=09"
+          target="_blank"
+        >
+          <div id="c"><i class="fa fa-twitter" id="fa"></i></div>
+        </a>
+        <a href="https://www.instagram.com/nithinnagineni/" target="_blank">
+          <div id="c"><i class="fa fa-instagram" id="fa"></i></div>
+        </a>
       </div>
     </div>
+
+    <!-- JS file (unchanged) -->
+    <script src="portfolio.js"></script>
   </body>
-  <script src="portfolio.js"></script>
 </html>
